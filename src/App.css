@@ -1,8 +1,8 @@
 body{
     background-image: url('../public/3.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .main_cont{
     height: 600px;

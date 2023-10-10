@@ -33,7 +33,7 @@ export default function Search_bar() {
             humidity: humidity,
             wind_speed: wind_speed,
             location: location,
-            icon: `https://openweathermap.org/img/wn/${icon}@4x.png`,
+            icon: `${icon}.png`,
         })
     }
 
@@ -58,9 +58,10 @@ export default function Search_bar() {
                 }
                 <h1 id="weather">{weatherData.weather}</h1>
             </div>
-            <div className="temp">
-                <h1 id="weather">{ weatherData.temp}</h1>
-            </div>
+            {weatherData.temp &&
+                <div className="temp">
+                    <h1 id="weather">{`${weatherData.temp}° C`}</h1>
+                </div>}
         </div>
     )
 }
