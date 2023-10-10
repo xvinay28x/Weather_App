@@ -41,6 +41,7 @@ export default function Search_bar() {
         <div>
             <div className="search_cont">
                 <input
+                    id="input"
                     type="text"
                     className="search_bar"
                     placeholder="Search"
@@ -50,17 +51,28 @@ export default function Search_bar() {
                 <div className="search_icon" onClick={() => search()}>
                     <img id="search" src="4.png" alt="search" />
                 </div>
+                
             </div>
             <div className="icon_cont">
                 {
                     weatherData.icon && <img id="icon"
                         src={weatherData.icon} />
                 }
-                <h1 id="weather">{weatherData.weather}</h1>
+                <h1 id="city">{weatherData.location}</h1>
             </div>
             {weatherData.temp &&
                 <div className="temp">
-                    <h1 id="weather">{`${weatherData.temp}° C`}</h1>
+                    <h1 id="temp">{`${weatherData.temp}° C`}</h1>
+                </div>}
+            {weatherData.wind_speed &&
+                <div className="wind_speed_cont">
+                    <img id="wind" src="8.png" />
+                    <h1 id="wind_text">{"Wind Speed : " + weatherData.wind_speed + " km/h"}</h1>
+                </div>}
+            {weatherData.humidity &&
+                <div className="humidity_cont">
+                    <img id="humidity" src="5.png" />
+                    <h1 id="humidity_text">{"Humidity : " + weatherData.humidity + " %"}</h1>
                 </div>}
         </div>
     )

@@ -1,5 +1,6 @@
 .search_cont{
     display: flex;
+    margin-top: -20px;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -38,22 +39,54 @@
     width: 20px;  
 }
 .icon_cont{
-    /* background-color: crimson; */
-    display: flex;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 #icon{
-    display: flex;
-    height: 250px;
-    width: 250px;
-    
+    height: 150px;
+    width: 150px;
 }
-#weather{
-    text-align: center;
-    color: rgb(111, 109, 110);
+#city{
+    font-family: 'Courier New', Courier, monospace;
 }
 .temp{
+    margin-top: -20px;
     text-align: center;
     font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wind_speed_cont{
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    /* background-color: crimson; */
+    float: right;
+    text-align: center;
+}
+.humidity_cont {
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    /* background-color: crimson; */
+    text-align: center;
+    
+}
+#humidity {
+    height: 80px;
+    width: 80px;
+}
+#wind {
+    height: 70px;
+    width: 70px;
+}
+#humidity_text{
+    font-size:15px;
+    margin-top: -5px;
+}    
+#wind_text {
+    font-size: 15px;
+    margin-top: -5px;
+
 }
