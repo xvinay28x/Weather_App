@@ -3,7 +3,7 @@ import './Header.css'
 
 export default function Header() {
     return (
-        <h1 id="weather">
+        <h1 id="headline">
             WEATHER
         </h1>
     )
